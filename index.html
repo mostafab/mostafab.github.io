@@ -30,18 +30,34 @@
 </head>
 
 <body>
+
     <!-- ******HEADER****** -->
     <header class="header">
+        <nav class='navbar navbar-fixed-top btn-info'>
+            <div class='container-fluid'>
+                <div class='navbar-header'>
+                    <a class='navbar-brand white' href='#'>Home</a>
+                </div>
+                <div class='navbar-header'>
+                    <a class='navbar-brand white' href='#bio'>About Me</a>
+                </div>
+                <div class='navbar-header'>
+                    <a class='navbar-brand white' href='#contact'>Contact</a>
+                </div>
+                <div class='navbar-header'>
+                    <a class='navbar-brand white' href='#works'>Sample Works</a>
+                </div>
+                <div class='navbar-header'>
+                    <a class='navbar-brand white' href='#resume'>Resume</a>
+                </div>
+            </div>
+        </nav>
         <div class="container">
             <img class="profile-image img-responsive pull-left" src='./assets/images/profile.png' alt="Mostafa Bhuiyan" />
             <div class="profile-content pull-left" style='margin-left:50px'>
                 <h1 class="name">Mostafa Bhuiyan</h1>
                 <h2 class="desc">Student and Aspiring Software Engineer</h2>
                 <h2 class='desc'>Georgia Institute of Technology</h2>
-                <ul class="social list-inline">
-                    <li><a href="https://www.linkedin.com/in/mostafa-bhuiyan-a59a268a" target='_blank'><i class="fa fa-linkedin"></i></a></li>
-                    <li><a href="https://github.com/mostafab" target='_blank'><i class="fa fa-github-alt"></i></a></li>
-                </ul>
             </div><!--//profile-->
         </div><!--//container-->
     </header><!--//header-->
@@ -49,7 +65,7 @@
     <div class="container sections-wrapper">
         <div class="row">
             <div class="primary col-md-8 col-sm-12 col-xs-12">
-                <section class="about section">
+                <section class="about section" id='bio'>
                     <div class="section-inner">
                         <h2 class="heading">About Me</h2>
                         <div class="content">
@@ -67,8 +83,31 @@
                                 something new in full-stack web development. The popular frameworks of today may not be the go to solutions for tomorrow. I believe this characteristic will enable me to
                                 focus more on the bigger picture behind the problems software developers face and the principles they apply instead of the ins and outs of any particular framework, which in turn will make me a better developer.
                             </p>
-
-
+                        </div><!--//content-->
+                        <hr>
+                        <h2 class="heading">Interests</h2>
+                        <div class="content">
+                            <p>
+                                My current interests lie in web technologies in general. The opportunities web technologies open to learning more about the
+                                user experience is a fascinating field and I hope to learn more about them as I continue my education.
+                            </p>
+                            <p>
+                                In terms of general programming, I have also gained an interest in functional programming and the doors it opens to clean and readable code.
+                            </p>
+                            <p>
+                                When I'm not programming, I enjoy playing basketball and discovering new music, particularly jazz music!
+                            </p>
+                        </div><!--//content-->
+                        <hr>
+                        <h2 class="heading">Activities</h2>
+                        <div class="content">
+                            <div class="item">
+                                <h3 class="title">Treasurer - <span class="place"><p>Georgia Tech Academic Team</p></span> <span class="year">(August 2013 - December 2015)</span></h3>
+                                <p>
+                                    Responsible for team's finances and communicating with university financial office to facilitate delivery of payments for tournaments.
+                                    Responsible for writing hundreds of quizbowl questions to distribute to high school teams in the US.
+                                </p>
+                            </div><!--//item-->
                         </div><!--//content-->
                     </div><!--//section-inner-->
                 </section><!--//section-->
@@ -79,7 +118,7 @@
                         <div class="content">
                             <div class="item">
                                 <h3 class="title">Incoming Software Engineering Intern - <span class="place"><a href="http://ingeniousmed.com/" target='_blank'>Ingenious Med</a></span> <span class="year">(May 2016)</span></h3>
-                                <p></p>
+
                             </div><!--//item-->
                             <div class="item">
                                 <h3 class="title">Technical Assistant - <span class="place"><a href="https://support.cc.gatech.edu/" target='_blank'>Georgia Tech College of Computing</a></span> <span class="year">(January 2014 - December 2015)</span></h3>
@@ -92,55 +131,78 @@
                     </div><!--//section-inner-->
                 </section><!--//section-->
 
-               <section class="latest section">
-                    <div class="section-inner">
-                        <h2 class="heading">Main Projects</h2>
-                        <div class="content">
-                            <hr class="divider" />
-                            <div class="item row">
-                                <a class="col-md-4 col-sm-4 col-xs-12" href="http://neg5.org" target="_blank">
-                                <img class="img-responsive project-image" src="assets/images/projects/neg5.jpg" alt="Neg 5" />
-                                </a>
-                                <div class="desc col-md-8 col-sm-8 col-xs-12">
-                                    <h3 class="title"><a href="http://neg5.org" target="_blank">Neg 5 : Quizbowl for the Cloud</a></h3>
-                                    <p>
-                                        I developed an open-source web application using Node.js with the Express framework and MongoDB for the quiz bowl community in which tournament directors are able to work collaboratively to manage all aspects of their tournaments’ life cycles. Has the ability to generate real-time statistics HTML and export to multiple data-exchange formats like JSON for uploading to a national database.
+                <div id='works'>
+                    <section class="latest section">
+                         <div class="section-inner">
+                             <h2 class="heading">Main Projects</h2>
+                             <div class="content">
+                                 <hr class="divider" />
+                                 <div class="item row">
+                                     <a class="col-md-4 col-sm-4 col-xs-12" href="http://neg5.org" target="_blank">
+                                     <img class="img-responsive project-image" src="assets/images/projects/neg5.jpg" alt="Neg 5" />
+                                     </a>
+                                     <div class="desc col-md-8 col-sm-8 col-xs-12">
+                                         <h3 class="title"><a href="http://neg5.org" target="_blank">Neg 5 : Quizbowl for the Cloud</a></h3>
+                                         <p>
+                                             I developed an open-source web application using Node.js with the Express framework and MongoDB for the quiz bowl community in which tournament directors are able to work collaboratively to manage all aspects of their tournaments’ life cycles. Has the ability to generate real-time statistics HTML and export to multiple data-exchange formats like JSON for uploading to a national database.
 
-                                    </p>
-                                    <p><a class="more-link" href="https://github.com/mostafab/neg5" target="_blank"><i class="fa fa-external-link"></i>Source code</a></p>
-                                </div><!--//desc-->
-                            </div><!--//item-->
+                                         </p>
+                                         <p><a class="more-link" href="https://github.com/mostafab/neg5" target="_blank"><i class="fa fa-external-link"></i>Source code</a></p>
+                                     </div><!--//desc-->
+                                 </div><!--//item-->
 
-                        </div><!--//content-->
-                    </div><!--//section-inner-->
-                </section><!--//section-->
+                             </div><!--//content-->
+                         </div><!--//section-inner-->
+                     </section><!--//section-->
 
-                <section class="projects section">
-                    <div class="section-inner">
-                        <h2 class="heading">Other Projects</h2>
-                        <div class="content">
-                            <div class="item">
-                                <h3 class="title"><a href="#">M.U.L.E.</a></h3>
-                                <p class="summary">Provide a brief description of your project. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatu.</p>
-                                <p><a class="more-link" href="http://themes.3rdwavemedia.com/website-templates/responsive-bootstrap-theme-for-mobile-apps-delta/" target="_blank"><i class="fa fa-external-link"></i> Find out more</a></p>
-                            </div><!--//item-->
+                     <section class="projects section">
+                         <div class="section-inner">
+                             <h2 class="heading">Other Projects</h2>
+                             <div class="content">
+                                 <div class="item row">
+                                    <a class='col-md-4 col-sm-4 col-xs-12'>
+                                        <img class='img-responsive project-image' src='assets/images/projects/mule.png' alt='Mule'/>
+                                    </a>
+                                    <div class='desc col-md-8 col-sm-8 col-xs-12'>
+                                        <h3 class="title"><a href="#">M.U.L.E.</a></h3>
+                                        <p class="summary">
+                                           I worked in a group of five to create a strategy game based in JavaFX. Through this project, I gained an understanding of good OOP design principles and the agile software development cycle
+                                           by keeping up with weekly milestones and sprints. My responsibilities included designing the interface, writing extensible code, and doing weekly code reviews.
+                                        </p>
+                                    </div>
+                                 </div><!--//item-->
+                                 <div class="item row">
+                                    <div class='desc col-md-8 col-sm-8 col-xs-12'>
+                                        <h3 class="title"><a href="https://github.com/mostafab/getterScript" target="_blank">Python Getter Script</a></h3>
+                                        <p class="summary">
+                                           As a time saver for me, I wrote a command-line script that will parse a standard Java file and edit it to add in getters and setters for all public variables in that file.
+                                        </p>
+                                        <p><a class="more-link" href="https://github.com/mostafab/getterScript" target="_blank"><i class="fa fa-external-link"></i>Source code</a></p>
+                                    </div>
+                                 </div><!--//item-->
 
-                        </div><!--//content-->
-                    </div><!--//section-inner-->
-                </section><!--//section-->
+                             </div><!--//content-->
+                         </div><!--//section-inner-->
+                     </section><!--//section-->
+                </div>
 
 
             </div><!--//primary-->
             <div class="secondary col-md-4 col-sm-12 col-xs-12">
-                 <aside class="info aside section">
+                 <aside class="info aside section" id='contact'>
                     <div class="section-inner">
-                        <h2 class="heading sr-only">Basic Information</h2>
+                        <h2 class="heading">Contact</h2>
                         <div class="content">
                             <ul class="list-unstyled">
                                 <li><i class="fa fa-map-marker"></i><span class="sr-only"></span>Mostafa Bhuiyan</li>
                                 <li><i class="fa fa-map-marker"></i><span class="sr-only">Location:</span>Atlanta, GA, USA</li>
-                                <li><i class="fa fa-envelope-o"></i><span class="sr-only">Email:</span><a href="#">mbhuiyan8@gatech.edu</a></li>
+                                <li><i class="fa fa-envelope-o"></i><span class="sr-only">Email:</span><a href="mailto:mbhuiyan8@gatech.edu">mbhuiyan8@gatech.edu</a></li>
                                 <li><i class="fa fa-link"></i><span class="sr-only">Website:</span><a href="https://mostafab.github.io">mostafab.github.io</a></li>
+                            </ul>
+                            <br>
+                            <ul class="social list-inline">
+                                <li><a href="https://www.linkedin.com/in/mostafa-bhuiyan-a59a268a" target='_blank'><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="https://github.com/mostafab" target='_blank'><i class="fa fa-github-alt"></i></a></li>
                             </ul>
                         </div><!--//content-->
                     </div><!--//section-inner-->
@@ -197,33 +259,6 @@
                     </div><!--//section-inner-->
                 </aside><!--//section-->
 
-                <aside class="skills aside section">
-                    <div class="section-inner">
-                        <h2 class="heading">Relevant</h2>
-                        <div class="content">
-
-                            <div class="skillset">
-
-                                <div class="item">
-                                    <h3 class="level-title">Python &amp; Django
-                                </div><!--//item-->
-
-                                <div class="item">
-                                    <h3 class="level-title">Javascript &amp; jQuery
-                                </div><!--//item-->
-
-                                <div class="item">
-                                    <h3 class="level-title">HTML5, CSS3, SASS &amp; LESS
-                                </div><!--//item-->
-
-                                <div class="item">
-                                    <h3 class="level-title">Ruby on Rails
-                                </div><!--//item-->
-                            </div>
-                        </div><!--//content-->
-                    </div><!--//section-inner-->
-                </aside><!--//section-->
-
                 <aside class="languages aside section">
                     <div class="section-inner">
                         <h2 class="heading">Languages</h2>
@@ -249,31 +284,10 @@
             </div><!--//secondary-->
         </div><!--//row-->
 
-        <div style='text-align:center;'>
+        <div style='text-align:center;' id='resume'>
             <embed src='./resume.pdf' width='100%' height='800px'>
         </div>
     </div><!--//masonry-->
-    <!-- ******FOOTER****** -->
 
-    <footer class="footer">
-        <div class="container text-center">
-                <!--/* This template is released under the Creative Commons Attribution 3.0 License. Please keep the attribution link below when using for your own project. Thank you for your support. :) If you'd like to use the template without the attribution, you can check out other license options via our website: themes.3rdwavemedia.com */-->
-                <small class="copyright">Designed with <i class="fa fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers</small>
-        </div><!--//container-->
-    </footer><!--//footer-->
-
-    <!-- Javascript -->
-    <!-- <script type="text/javascript" src="assets/plugins/jquery-1.11.3.min.js"></script> -->
-    <!-- <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script> -->
-    <!-- <script type="text/javascript" src="assets/plugins/jquery-rss/dist/jquery.rss.min.js"></script> -->
-    <!-- github calendar plugin -->
-    <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/es6-promise/3.0.2/es6-promise.min.js"></script> -->
-    <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fetch/0.10.1/fetch.min.js"></script> -->
-    <!-- <script type="text/javascript" src="assets/plugins/github-calendar/dist/github-calendar.min.js"></script> -->
-    <!-- github activity plugin -->
-    <!-- <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script> -->
-    <!-- <script type="text/javascript" src="assets/plugins/github-activity/src/github-activity.js"></script> -->
-    <!-- custom js -->
-    <!-- <script type="text/javascript" src="assets/js/main.js"></script> -->
 </body>
 </html>

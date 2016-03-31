@@ -514,6 +514,12 @@ box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 .footer .fa-heart {
   color: #fb866a;
 }
+.white {
+    color: white;
+}
+.white:hover {
+    color: grey;
+}
 /* Extra small devices (phones, less than 768px) */
 @media (max-width: 767px) {
   .header {
